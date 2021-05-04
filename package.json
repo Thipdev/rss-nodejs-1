@@ -2,9 +2,10 @@
   "name": "rss-nodejs-1",
   "version": "1.0.0",
   "description": "Caesar cipher",
-  "main": "index.js",
+  "main": "my_caesar_cli.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test1": "node my_caesar_cli --action encode --shift 7 --input plain.txt --output encoded.txt"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Thipdev/rss-nodejs-1/issues"
   },
-  "homepage": "https://github.com/Thipdev/rss-nodejs-1#readme"
+  "homepage": "https://github.com/Thipdev/rss-nodejs-1#readme",
+  "dependencies": {
+    "commander": "^7.2.0"
+  }
 }
