@@ -6,7 +6,7 @@ const readStreamFactory = require('./read-stream-factory');
 const writeStreamFactory = require('./write-stream-factory');
 
 if(!validator.validate(options)) {
-    return 1;
+    return;
 }
 
 pipeline(
@@ -19,8 +19,6 @@ pipeline(
             return;
         }
 
-        console.log('done');
+        console.log('done.');
     }
 );
-
-return 0;
