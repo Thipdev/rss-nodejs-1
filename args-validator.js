@@ -1,6 +1,6 @@
 function validate(options) {
     if(options.shift === undefined) {
-        console.error('Command-line argument <shift> is missed or zero.');
+        console.error('Command-line argument <shift> is missed.');
         return false;
     }
 
