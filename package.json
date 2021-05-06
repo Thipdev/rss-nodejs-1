@@ -4,12 +4,7 @@
   "description": "Caesar cipher",
   "main": "my_caesar_cli.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "test1": "node my_caesar_cli --action encode --shift 2 --input \"source.txt\" --output \"destination.txt\"",
-    "test2": "node my_caesar_cli --action decode --shift 2 --input \"source.txt\" --output \"destination.txt\"",
-    "test3": "node my_caesar_cli --action encode --shift 2 -o \"destination.txt\"",
-    "test4": "node my_caesar_cli --action encode --shift 2 -i \"source.txt\"",
-    "test5": "node my_caesar_cli --action encode --shift 2"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",

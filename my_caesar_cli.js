@@ -15,7 +15,7 @@ pipeline(
     writeStreamFactory.createSteam(options),
     (err) => {
         if(err) {
-            console.error(err);
+            console.error(err.message || err);
             return;
         }
 
