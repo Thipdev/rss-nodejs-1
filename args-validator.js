@@ -1,5 +1,5 @@
 function validate(options) {
-    if(!options.shift) {
+    if(options.shift === undefined) {
         console.error('Command-line argument <shift> is missed or zero.');
         return false;
     }
@@ -14,8 +14,12 @@ function validate(options) {
         return false;
     }
 
-    // converto to number
-    options.shift = options.shift*1;
+    // convert to number
+    options.shift = options.shift * 1;
+    if(!options.shift || !Number.isInteger(options.shift)) {
+        console.error('Command-line argument <shift> is not integer or zero.');
+        return false;
+    }
 
     return true;
 }
